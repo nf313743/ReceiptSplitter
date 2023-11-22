@@ -15,13 +15,16 @@ module PdfParser =
                     let contents =
                         PdfTextExtractor.GetTextFromPage(pdfDocument.GetPage(i))
                     sb.Append(contents).Append(Environment.NewLine))
-           
+
                 (StringBuilder())
 
         builder.ToString().Split("\n") |> List.ofArray
 
     let private lineContainsPrice (line: string) =
-        line.IndexOf("\u00A3") > -1
+        if line.Contains("Donate") then 
+            false
+        else
+            line.IndexOf("\u00A3") > -1
 
     let extractItem (line: string) =
         let indexOfPound = line.IndexOf("\u00A3")
@@ -59,15 +62,12 @@ module PdfParser =
             |> extractLines
             |> List.skipWhile (fun x -> not (x.Contains(pdfDetails.StartCondition)))
             |> List.skip 1
-            |> List.takeWhile (fun x -> 
+            |> List.takeWhile (fun x ->
                 let fool = 3
                 not (x.Contains(pdfDetails.StopCondition)))
-                
+
         let foo = lineItemParser [] items None
         foo
-
-
-
 
 // let private rec alternativeParse foo (sb:StringBuilder) n =
 //     match n with

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ReceiptSplitter", "ReceiptSplitter.fsproj", "{FAC2229C-B5FE-495E-AE86-E49B8180A5E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC2229C-B5FE-495E-AE86-E49B8180A5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC2229C-B5FE-495E-AE86-E49B8180A5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC2229C-B5FE-495E-AE86-E49B8180A5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC2229C-B5FE-495E-AE86-E49B8180A5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B7C6505-780D-4D35-93BB-A878542624DF}
+	EndGlobalSection
+EndGlobal

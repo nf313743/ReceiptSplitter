@@ -6,14 +6,14 @@ open System.IO
 let inputPath = "./files"
 let outputPath = inputPath
 
-let outputFileName (fileName: string) = 
+let outputFileName (fileName: string) =
     let f = Path.Combine(outputPath, "out-" + fileName.Replace("pdf", "txt"))
     f
 
 [<EntryPoint>]
 let main argv =
 
-    let fileName = "2022-03-02.pdf"
+    let fileName = "2023-06-23.pdf"
     let filePath = Path.Combine(inputPath, fileName)
 
     let pdfDetails =
